@@ -31,22 +31,22 @@
 <script type="text/javascript">
 
     const url = {
-        1:"https://cc13.zelaer.com/",
+        1:"https://cc22.zelaer.com/",
         2:"https://lg9d.wcfbb.com/",
         3:"https://hs3c.czwbc.com/"
     }
 
-    const id = 23973;
+    const id = 23845;
 
     function handleClick (index) {
         var copyipt = document.createElement("input");
-        var text = ${url[index]}${id};
+        var text = `${url[index]}${id}`;
         copyipt.setAttribute("value", text);
         document.body.appendChild(copyipt);
         copyipt.select();
         document.execCommand("copy");
         alert("已成功复制地址，请使用浏览器打开观看");
-     document.body.removeChild(copyipt);
+	    document.body.removeChild(copyipt);
     }
 
 </script>
