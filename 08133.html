@@ -36,17 +36,17 @@
         3:"https://ee35.718fan.com/"
     }
 
-    const id = 23973;
+    const id = 10986;
 
     function handleClick (index) {
         var copyipt = document.createElement("input");
-        var text = ${url[index]}${id};
+        var text = `${url[index]}${id}`;
         copyipt.setAttribute("value", text);
         document.body.appendChild(copyipt);
         copyipt.select();
         document.execCommand("copy");
         alert("已成功复制地址，请使用浏览器打开观看");
-     document.body.removeChild(copyipt);
+	    document.body.removeChild(copyipt);
     }
 
 </script>
@@ -57,7 +57,7 @@
 <div class="top">
     <span>当前页面截图保存，以免丢失</span>
 </div>
-<div class="logo"><img src="https://pic.rmb.bdstatic.com/bjh/user/9c4ebe6bde53144a3903662479b2f147.jpeg"></div>
+<div class="logo"><img src="https://pic.rmb.bdstatic.com/bjh/user/963b303f94d4176d34045fb6724f0c7d.jpeg"></div>
 <div class="list">
 <div onclick="handleClick(1)" data-umami-event=id>
 <img src="https://pic.rmb.bdstatic.com/bjh/user/97417c88943e84dc11b723f80f69e17d.png">
